@@ -7,22 +7,22 @@ function RoomWaitingLobby()
 				<div className="form-text">
 					Aguardando início.
 				</div>
-                <ul class="list-group mt-3">
-                    <li class="list-group-item">Brendo</li>
-                    <li class="list-group-item">Carlos</li>
+                <ul className="list-group mt-3">
+                    <li className="list-group-item">Brendo</li>
+                    <li className="list-group-item">Carlos</li>
                 </ul>
-                <div class="form-check mt-2">
+                <div className="form-check mt-2">
                     <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value="1"
                         id="viewer-mode"/>
-                    <label class="form-check-label" name="viewer_mode" for="viewer-mode">
+                    <label className="form-check-label" name="viewer_mode" for="viewer-mode">
                         Entrar como espectador
                     </label>
                 </div>
 
-                <button class="btn btn-lg btn-primary mt-3">Iniciar</button>
+                <button className="btn btn-lg btn-primary mt-3">Iniciar</button>
 
 			</div>
         </div>

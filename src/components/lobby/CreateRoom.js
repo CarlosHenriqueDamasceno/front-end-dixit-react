@@ -9,18 +9,18 @@ function LobbyForm()
 				</div>
 			</div>
 			<form className="mt-3">
-				<div class="mb-3">
-					<label for="name" class="form-label">Informe seu nome</label>
+				<div className="mb-3">
+					<label for="name" className="form-label">Informe seu nome</label>
 					<input
 						type="text"
 						name="name"
-						class="form-control"
+						className="form-control"
 						id="name"
 						aria-describedby="nome"
 						placeholder="Informe seu nome"/>
 
 					<div className="text-center pt-3">
-						<button class="btn btn-lg btn-primary">Criar</button>
+						<button className="btn btn-lg btn-primary">Criar</button>
 					</div>
 				</div>
 			</form>
