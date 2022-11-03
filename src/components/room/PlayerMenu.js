@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { selectCurrentUser } from "../../store/usersSlice";
 import './PlayerMenu.css';
 
 function PlayerMenu(){
 
-    const [player, setPlayer] = useState({
-        id: 1,
-        initials: 'CA'
-    });
+    const currentPlayer = useSelector(selectCurrentUser)
 
 
     return (
@@ -15,7 +13,7 @@ function PlayerMenu(){
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                {player.initials}
+                {currentPlayer.initials}
             </button>
             <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Sair</a></li>

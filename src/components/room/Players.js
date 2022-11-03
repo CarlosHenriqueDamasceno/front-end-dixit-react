@@ -1,34 +1,10 @@
 import './Players.css'
-import { useState } from "react";
+import { useSelector } from 'react-redux';
+import { selectUsers } from '../../store/usersSlice';
 
 function Players(){
 
-    const [players, setPlayers] = useState({
-        '1': {
-            id: '1',
-            initials: 'CA'
-        },
-        '2': {
-            id: '2',
-            initials: 'BM'
-        },
-        '3': {
-            id:'3',
-            initials: 'GS'
-        },
-        '4': {
-            id: '4',
-            initials: 'DM'
-        },
-        '5': {
-            id: '5',
-            initials: 'MQ'
-        },
-        '6': {
-            id: '6',
-            initials: 'MS'
-        }
-    });
+    const players = useSelector(selectUsers);
 
     return(
         <div className="d-flex align-items-center justify-content-center">

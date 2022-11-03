@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useEffect } from 'react';
-import socketService from './services/socketService';
-import Lobby from './components/lobby';
-import Room from './components/room';
+import socketService from '../services/socketService';
+import Lobby from './lobby';
+import Room from './room';
 
 function App() {
 
